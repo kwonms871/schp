@@ -1,0 +1,44 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width : 100px;
+    height: 40px;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: center;
+}
+
+th p{
+	font: 4;
+}
+
+.number th p{
+	text-decoration-line: underline;
+}
+
+th:hover{
+	background-color: #D8D8D8;
+}
+
+.menu,
+#sub-drop{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#sub-drop{
+	position: absolute;
+	background: #333;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.menu > li:hover #sub-drop{
+	opacity: 1;
+	visibility: visible;
+}
